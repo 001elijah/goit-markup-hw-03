@@ -17,11 +17,50 @@
     --dark-background-color: #2F303A;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
 /* common page style */
 .page {
+    margin: 0;
     background-color: #FFFFFF;
     color: var(--secondary-text-color);
     font-family: 'Roboto', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    outline: 1px solid red;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
 }
 
 /* logo style */
@@ -48,9 +87,35 @@
     letter-spacing: 0.03em;
 }
 
-/* remove dots from list */
+/* remove dots from list and settings reset */
 .list {
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.pros-list {
+    padding-top: 95px;
+}
+
+.activity-list {
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
+.team-list {
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
+.filter-list {
+    padding-top: 95px;
+}
+
+.works-list {
+    padding-top: 35px;
+    padding-bottom: 95px;
 }
 
 /* hide logical header */
@@ -60,6 +125,19 @@
 }
 
 /* page nav */
+.page-nav {
+    display: flex;
+    padding-left: 0;
+}
+
+.page-nav li {
+    outline: 1px solid red;
+}
+
+.page-nav li:not(:last-child) {
+    margin-right: 50px;
+}
+
 .page-nav a {
     color: var(--main-text-color);
     text-decoration: none;
@@ -68,6 +146,11 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+
+.contact-nav {
+    padding-left: 0;
+}
+
 .contact-nav a {
     color: var(--secondary-text-color);
     text-decoration: none;
@@ -76,6 +159,16 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+
+.contact-nav li {
+    outline: 1px solid red;
+    margin: 0;
+}
+
+.contact-nav li:not(:last-child) {
+    margin-right: 50px;
+}
+
 .page-nav a:hover,
 .contact-nav a:hover,
 .page-nav a:focus,
@@ -91,6 +184,10 @@
 
 .hero {
     background-color: var(--dark-background-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    /* put text-align: center; into parent and all descendants will inherit centrical alignment */
+    text-align: center;
 }
 
 .hero .hero-title {
@@ -98,26 +195,27 @@
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .hero-button {
     color: var(--white-text-color);
-    text-decoration: none;
     font-weight: 700;
-    font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     
     background-color: var(--accent-color);
 
-    width: 216px;
+    min-width: 216px;
     height: 50px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
 }
 
 .hero-button:hover {
@@ -136,6 +234,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-top:0;
 }
 
 .section-text {
@@ -150,6 +249,7 @@
     line-height: 1.17;
     text-align: center;
     text-transform: unset;
+    margin-bottom: 50px;
 }
 
 /* our team */
@@ -159,7 +259,6 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    text-align: center;
     letter-spacing: 0.03em;
 }
 
@@ -167,7 +266,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
-    text-align: center;
     letter-spacing: 0.03em;
 }
 
@@ -195,8 +293,11 @@
 /* works section */
 
 .works a {
-    color: var(--main-text-color);
     text-decoration: none;
+}
+
+.works h2 {
+    color: var(--main-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -214,6 +315,11 @@
 /* footer */
 .page-footer {
     background-color: var(--dark-background-color);
+}
+
+.footer-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .entry {
