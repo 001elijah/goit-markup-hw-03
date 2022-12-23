@@ -40,18 +40,20 @@
     <!-- Unique Page Content -->
     <main>
     <!-- add section within block div because it is a separate section -->
-        <section class="hero container">
-            <!-- if u c that a part of a string begins from a new string simply use "br" -->
-            <h1 class="hero-title">Ефективні рішення для <br /> вашого бізнесу</h1>
-            <button type="button" class="hero-button">Замовити послугу</button>
+        <section class="hero">
+            <div class="container">
+                <!-- if u c that a part of a string begins from a new string simply use "br" -->
+                <h1 class="hero-title">Ефективні рішення для <br /> вашого бізнесу</h1>
+                <button type="button" class="hero-button">Замовити послугу</button>
+            </div>
         </section>
         <!-- one block for the next two sections(?) -->
-            <!-- use "section" when u c homogeneous content for semantics -->
+            <!-- use "section" when you see homogeneous content for semantics -->
         <section class="section">
             <div class="container">
                 <!-- sometimes there can be no header in a section. adding a header to it (h2 below) improves semantics -->
                 <h2 class="hide-heading">Наші переваги</h2>
-                <!-- use "ul" if u see several similar elements repeating in a row -->
+                <!-- use "ul" if you see several similar elements repeating in a row -->
                 <ul class="list pros-list">
                     <li>
                         <h3 class="section-title">Увага до деталей</h3>

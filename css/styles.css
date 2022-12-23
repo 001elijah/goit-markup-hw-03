@@ -184,10 +184,13 @@ nav {
 
 .hero {
     background-color: var(--dark-background-color);
-    padding-top: 200px;
-    padding-bottom: 200px;
     /* put text-align: center; into parent and all descendants will inherit centrical alignment */
     text-align: center;
+}
+
+.hero .container {
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero .hero-title {
