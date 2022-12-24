@@ -56,11 +56,18 @@ html {
 
 .header-flex {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    height: 80px;
 }
 
 nav {
     display: flex;
+    margin-right: 344px;
+    align-items: center;
+}
+
+nav a {
+    display: block;
 }
 
 /* logo style */
@@ -74,6 +81,12 @@ nav {
 
 .logo-3-3 {
     color: var(--white-text-color);
+}
+
+.logo {
+    display: block;
+
+    margin-right: 93px;
 }
 
 .logo,
@@ -127,18 +140,18 @@ nav {
 /* page nav */
 .page-nav {
     display: flex;
-    padding-left: 0;
-}
-
-.page-nav li {
-    outline: 1px solid red;
 }
 
 .page-nav li:not(:last-child) {
     margin-right: 50px;
 }
-
+                        /* sequence for styles description: geometry -> colors&fonts -> animation & etc. */
 .page-nav a {
+    /* link is an inline element, so padding doesn't work.
+    to make it work make display: block (for block element)
+    or display: inline-block for inline-block element */
+    display: block;
+
     color: var(--main-text-color);
     text-decoration: none;
     font-weight: 500;
@@ -147,8 +160,16 @@ nav {
     letter-spacing: 0.02em;
 }
 
-.contact-nav {
-    padding-left: 0;
+.contact-flex {
+    display: flex;
+}
+
+.contact-flex li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contact-flex a {
+    display: block;
 }
 
 .contact-nav a {
@@ -161,12 +182,7 @@ nav {
 }
 
 .contact-nav li {
-    outline: 1px solid red;
     margin: 0;
-}
-
-.contact-nav li:not(:last-child) {
-    margin-right: 50px;
 }
 
 .page-nav a:hover,
