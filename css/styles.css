@@ -62,7 +62,7 @@ html {
 
 nav {
     display: flex;
-    margin-right: 344px;
+    margin-right: auto;
     align-items: center;
 }
 
@@ -109,16 +109,31 @@ nav a {
 }
 
 .pros-list {
+    display: flex;
     padding-top: 95px;
+    padding-bottom: 95px;
+
+    outline: 1px solid tomato;
+}
+
+.pros-list h3,
+.pros-list p {
+    display: block;
+    width: 270px;
+}
+
+.pros-list li:not(:last-child) {
+    margin-right: 30px;
 }
 
 .activity-list {
-    padding-top: 95px;
+    display: flex;
+    justify-content: space-between;;
     padding-bottom: 95px;
 }
 
 .team-list {
-    padding-top: 95px;
+    display: flex;
     padding-bottom: 95px;
 }
 
@@ -151,6 +166,8 @@ nav a {
     to make it work make display: block (for block element)
     or display: inline-block for inline-block element */
     display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     color: var(--main-text-color);
     text-decoration: none;
@@ -170,6 +187,8 @@ nav a {
 
 .contact-flex a {
     display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .contact-nav a {
@@ -264,14 +283,21 @@ nav a {
 }
 
 .section-title.bigfont {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     text-transform: unset;
-    margin-bottom: 50px;
 }
 
 /* our team */
+
+.section.team .bigfont {
+ padding-top: 95px;
+ padding-bottom: 50px;
+}
 
 .team-member {
     color: var(--main-text-color);
