@@ -50,8 +50,6 @@ html {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-
-    outline: 1px solid red;
 }
 
 .header-flex {
@@ -112,8 +110,6 @@ nav a {
     display: flex;
     padding-top: 95px;
     padding-bottom: 95px;
-
-    outline: 1px solid tomato;
 }
 
 .pros-list h3,
@@ -159,12 +155,28 @@ nav a {
 }
 
 .filter-list {
+    display: flex;
+    justify-content: center;
     padding-top: 95px;
 }
 
+.filter-list li:not(:last-child) {
+    margin-right: 8px;
+}
+
 .works-list {
+    display: flex;
+    flex-wrap: wrap;
     padding-top: 35px;
     padding-bottom: 95px;
+}
+
+.works-list li {
+    margin-right: 30px;
+}
+
+.works-list li:nth-child(3n) {
+    margin-right: 0;
 }
 
 /* hide logical header */
@@ -338,9 +350,13 @@ nav a {
 /* buttons */
 
 .button {
+    background: #F5F4FA;
+    border-radius: 4px;
+    border: 0px;
+    padding: 6px 22px;
+
     color: var(--main-text-color);
     background-color: var(--off-white-color);
-    border: 0px;
 
     font-family: inherit;
     font-weight: 500;
