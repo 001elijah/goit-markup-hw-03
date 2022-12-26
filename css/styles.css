@@ -52,6 +52,10 @@ html {
     margin-right: auto;
 }
 
+.page-header {
+    border-bottom: 1px solid #ececec;
+}
+
 .header-flex {
     display: flex;
     align-items: center;
