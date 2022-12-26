@@ -177,10 +177,30 @@ nav a {
 
 .works-list li {
     margin-right: 30px;
+    margin-bottom: 30px;
+    background: #FFFFFF;
+    outline: 1px solid #EEEEEE;
+}
+
+.works h2 {
+    padding-top: 20px;
+}
+
+.works h2,
+.works p {
+    padding-left: 24px;
+}
+
+.works p {
+    padding-bottom: 20px;
 }
 
 .works-list li:nth-child(3n) {
     margin-right: 0;
+}
+
+.works-list li:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
 }
 
 /* hide logical header */
