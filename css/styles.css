@@ -139,11 +139,23 @@ nav a {
 }
 
 .card {
-    height: 386px;
+    height: 368px;
     background: var(--white-text-color);
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+}
+
+.card h3 {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card p {
+    text-align: center;
+
 }
 
 .filter-list {
@@ -375,6 +387,24 @@ nav a {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
+.footer-logo {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 20px;
+    width: 145px;
+}
+
+.address p {
+    display: block;
+    margin-bottom: 9px;
+}
+
+.address li:not(:last-child) {
+    display: block;
+    margin-bottom: 9px;
+}
+
 
 .entry {
     color: var(--white-text-color);
