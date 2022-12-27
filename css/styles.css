@@ -179,7 +179,16 @@ nav a {
     margin-right: 30px;
     margin-bottom: 30px;
     background: #FFFFFF;
-    outline: 1px solid #EEEEEE;
+}
+
+.works-list img {
+    margin-bottom: -4px;
+}
+
+.card-border {
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .works h2 {
