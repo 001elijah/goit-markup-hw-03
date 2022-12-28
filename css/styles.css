@@ -110,10 +110,12 @@ nav a {
     padding-left: 0;
 }
 
+.section.pros {
+    padding-bottom: 0;
+}
+
 .pros-list {
     display: flex;
-    padding-top: 95px;
-    padding-bottom: 95px;
 }
 
 .pros-list h3,
@@ -128,40 +130,52 @@ nav a {
 
 .activity-list {
     display: flex;
-    justify-content: space-between;;
-    padding-bottom: 95px;
+    justify-content: space-between;
+}
+
+.activity-list img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .team-list {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 95px;
 }
 
-.card {
-    height: 368px;
-    background: var(--white-text-color);
-
+.team-list .card {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
-.card h3 {
+.card img {
     display: block;
-    margin-top: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+.card-label {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    background: var(--white-text-color);
+}
+
+.card-label h3 {
+    display: block;
     margin-bottom: 10px;
     text-align: center;
 }
 
-.card p {
+.card-label p {
     text-align: center;
-
 }
 
 .filter-list {
     display: flex;
     justify-content: center;
-    padding-top: 95px;
+    margin-bottom: 50px;
 }
 
 .filter-list li:not(:last-child) {
@@ -171,8 +185,6 @@ nav a {
 .works-list {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 35px;
-    padding-bottom: 95px;
 }
 
 .works-list li {
@@ -186,22 +198,13 @@ nav a {
 }
 
 .card-border {
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
-}
-
-.works h2 {
-    padding-top: 24px;
-}
-
-.works h2,
-.works p {
-    padding-left: 24px;
-}
-
-.works p {
-    padding-bottom: 20px;
 }
 
 .works-list li:nth-child(3n) {
@@ -287,9 +290,6 @@ nav a {
     background-color: var(--dark-background-color);
     /* put text-align: center; into parent and all descendants will inherit centrical alignment */
     text-align: center;
-}
-
-.hero .container {
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -327,18 +327,26 @@ nav a {
 }
 
 /* section title formatting */
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .section.team {
     background-color: var(--off-white-color);
 }
 
 .section-title {
+    margin-top:0;
+    margin-bottom: 10px;
+
     color: var(--main-text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-top:0;
 }
 
 .section-text {
@@ -349,8 +357,8 @@ nav a {
 }
 
 .section-title.bigfont {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 0;
+    margin-bottom: 50px;
 
     font-size: 36px;
     line-height: 1.17;
@@ -359,11 +367,6 @@ nav a {
 }
 
 /* our team */
-
-.section.team .bigfont {
- padding-top: 95px;
- padding-bottom: 50px;
-}
 
 .team-member {
     color: var(--main-text-color);
